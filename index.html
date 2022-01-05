@@ -56,7 +56,7 @@
       <div class="flex flex-col w-full h-full items-center pt-2">
         <div
           v-for="item in todoItems"
-          class="w-10/12 border-2 shadow-md my-2 p-2 flex"
+          class="w-10/12 border-2 shadow-md my-2 p-2 flex items-center"
         >
           <div
             class="
@@ -68,29 +68,41 @@
               h-full
             "
           >
-            <p class="text-2xl">Card Title</p>
-            <p class="text-sm">Descriptions</p>
+            <p class="text-md">Calcium + Lutein Lutein Lutein</p>
+            <p class="text-sm">Total Count: 2</p>
           </div>
           <div
-            class="
-              bg-gray-400
-              w-1/3
-              h-full
-              flex flex-col
-              items-center
-              justify-center
-            "
+            class="bg-gray-400 w-1/3 h-full flex items-center justify-center"
           >
             <div
               class="
-                bg-white
-                w-6
-                h-6
-                rounded-full
-                hover:bg-green-400
-                cursor-pointer
+                h-full
+                w-1/3
+                hover:cursor-pointer
+                text-md
+                flex
+                items-center
+                justify-center
               "
-            ></div>
+            >
+              <div>-</div>
+            </div>
+            <div class="h-full w-1/3 text-md flex items-center justify-center">
+              <div>0</div>
+            </div>
+            <div
+              class="
+                h-full
+                w-1/3
+                hover:cursor-pointer
+                text-md
+                flex
+                items-center
+                justify-center
+              "
+            >
+              <div>+</div>
+            </div>
           </div>
         </div>
       </div>
