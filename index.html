@@ -81,7 +81,7 @@
               item_name: 'someName',
               item_description: 'someDescription',
               item_record: {
-                20210105: {
+                r_2022_1_6: {
                   target: 3,
                   done: 2,
                 },
@@ -97,6 +97,18 @@
       methods: {
         incrementHabit: function (event, i) {
           this.todoItems[i].current_total += 1;
+          let date = this.getDateInfo();
+          console.log(date);
+          console.log(this.todoItems[i].item_record);
+          this.todoItems[i].item_record.date.done += 1;
+        },
+
+        getDateInfo: function () {
+          const d = new Date();
+          let year = String(d.getFullYear());
+          let month = String(d.getMonth() + 1);
+          let date = String(d.getDate());
+          return 'r_' + year + '_' + month + '_' + date;
         },
       },
     };
